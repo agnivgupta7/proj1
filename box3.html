@@ -1,0 +1,47 @@
+<style>
+    .main{
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        border-width: 10px;
+        border-color: red red green green;
+        border-style: solid;
+        border-radius: 100%;
+        transition: ease-in-out 1s;
+
+    }
+.box img{
+    width: 200px;
+     height: 200px;
+     border-radius: 100%;
+}
+.ovarlay{
+    width: 200px;
+     height: 200px;
+     border-radius: 100%;
+     background-color: rgba(0, 0, 0, 1);
+     position: absolute;
+     top: 10px;
+     opacity: 0;
+     transition: ease-in-out 1s;
+}
+.main:hover .box{
+    transform: rotate(180deg);
+}
+.main:hover .ovarlay{
+    opacity: 1;
+    
+}
+
+</style>
+<div class="main">
+    <div class="box">
+        <img src="5.jpg" alt="">
+        <div class="ovarlay"></div>
+    </div>
+</div>
